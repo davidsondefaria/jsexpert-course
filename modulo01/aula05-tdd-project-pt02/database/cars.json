@@ -1,0 +1,23 @@
+[
+  {
+    "id": "5ee18cdc-a23d-477e-b8b9-f0ae8dd777ef",
+    "name": "Silverado",
+    "releaseYear": 2024,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "47862a82-0995-40b7-ac9a-d48f45195221",
+    "name": "Golf",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "04f45bf6-3c7f-44a2-b02b-a01b43cc580e",
+    "name": "Civic",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  }
+]
