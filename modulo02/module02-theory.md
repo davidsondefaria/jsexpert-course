@@ -25,7 +25,7 @@ Pilha de memória que armazena os endereços memória que podem ser apontados pe
 
 [Prática](ref-vs-val/index.js)
 
-# Aula 04: Coerção de Tipos & Object Lifecycle
+# Aula 05: Coerção de Tipos & Object Lifecycle
 
 ## Coerção de Tipos
 
@@ -42,7 +42,13 @@ Existem 2 tipos de conversão: explicita e implicita.
 Todo objeto tem alguns métodos imbutidos e na hora da conversão para string, há uma ordem de chamada:
 
 1. Verifica se o valor é primitivo: se sim, retorna. Se não:
-2. Chama o método `.toString()`, verifica se o valor é primitivo. Se sim, retorna. Se não:
-3. Se ainda for objeto, chama o método `.valueOf()` e verifica se é primitivo. Se não, vai dar _type error_.
+2. Se ainda for objeto, chama o método `.valueOf()` e verifica se é primitivo. Se não,
+3. Chama o método `.toString()`, verifica se o valor é primitivo. Se sim, retorna. Se não, vai dar _type error_.
 
 No ES6, há um novo método chamado `Symbol.toPrimitive` que tem prioridade sobre toString e valueOf, que transforma o objeto para tipo primitivo.
+
+# Aula 06: Prototype Chain - Herança de Objetos
+
+Paticamente tudo em Javascript é um objeto. Uma classe, por exemplo, é apenas um _syntax sugar_ para a implementação de um tipo de objeto. A ideia de herança vem do POO e, no caso do Javascript, herança é realizada através do prototype. E por implementar a ideia de classes e heranças através dos prototypes, é possível utilizarmos dos princípios SOLID.
+
+_Prototype Chain_ é a busca pela existência de alguma propriedade de um objeto, sendo que, se ela não existir na base do objeto, a busca vai para o protótipo do objeto. Novamente, se ela não existir, vai para o 'protótipo do protótipo', ou seja, buscando por toda a 'arvore genealógica' do primeiro objeto em questão. Se chegar na raíz da instância e não encontrar nada, é retornado undefined.
