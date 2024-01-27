@@ -8,12 +8,16 @@ Repo based on [JS Expert](https://training.erickwendel.com.br/) classes.
   - [x] Spies
   - [x] e2e and Code Coverage
   - [x] Project TDD
-- [ ] Module 02: Javascript Lifecycle
-  - [ ] Strict mode
-  - [ ] Call Stack & Memory Heap
-  - [ ] Immutability vs Mutability
-  - [ ] Type Coercion & Objects lifecycles
-  - [ ] Prototype Chain
+- [x] Module 02: Javascript Lifecycle - Part 01
+  - [x] Strict mode
+  - [x] Call Stack & Memory Heap
+  - [x] Immutability vs Mutability
+  - [x] Type Coercion & Objects lifecycles
+  - [x] Prototype Chain
+- [ ] Module 03: Javascript Lifecycle - Part 02
+  - [ ] Function: arguments, this, bind vs call vs apply
+  - [ ] ECMAScripts Modules
+  - [ ] Project JS Lifecycle
 - [ ] Advanced Javascript Data Types
 - [ ] RegExp
 - [ ] Creational Design Patterns
