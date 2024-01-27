@@ -26,3 +26,23 @@ Pilha de memória que armazena os endereços memória que podem ser apontados pe
 [Prática](ref-vs-val/index.js)
 
 # Aula 04: Coerção de Tipos & Object Lifecycle
+
+## Coerção de Tipos
+
+É a conversão de um tipo para outro. Qualquer tipo de dados está sujeito a coerção, mas no fim, só existem 3 tipos de coerção: ou string, ou boolean, ou number. A lógica de conversão dos objects ou outros tipos não primitivos é diferente.
+
+Existem 2 tipos de conversão: explicita e implicita.
+
+- A coerção implicita é utilizada nos operadores (soma, if, loose equality operator (==)). Existe uma [tabela](https://dorey.github.io/JavaScript-Equality-Table/) que mostra a relação da conversão dos valores e o resultado delas.
+
+- A conversão explicita é utilizada por meio de funções (String(), Number(), Bool()...)
+
+## Object Lifecycle
+
+Todo objeto tem alguns métodos imbutidos e na hora da conversão para string, há uma ordem de chamada:
+
+1. Verifica se o valor é primitivo: se sim, retorna. Se não:
+2. Chama o método `.toString()`, verifica se o valor é primitivo. Se sim, retorna. Se não:
+3. Se ainda for objeto, chama o método `.valueOf()` e verifica se é primitivo. Se não, vai dar _type error_.
+
+No ES6, há um novo método chamado `Symbol.toPrimitive` que tem prioridade sobre toString e valueOf, que transforma o objeto para tipo primitivo.
