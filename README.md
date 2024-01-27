@@ -14,10 +14,10 @@ Repo based on [JS Expert](https://training.erickwendel.com.br/) classes.
   - [x] Immutability vs Mutability
   - [x] Type Coercion & Objects lifecycles
   - [x] Prototype Chain
-- [ ] Module 03: Javascript Lifecycle - Part 02
-  - [ ] Function: arguments, this, bind vs call vs apply
-  - [ ] ECMAScripts Modules
-  - [ ] Project JS Lifecycle
+- [x] Module 03: Javascript Lifecycle - Part 02
+  - [x] Function: arguments, this, bind vs call vs apply
+  - [x] ECMAScripts Modules
+  - [x] Project JS Lifecycle
 - [ ] Advanced Javascript Data Types
 - [ ] RegExp
 - [ ] Creational Design Patterns
