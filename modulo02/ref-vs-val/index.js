@@ -1,11 +1,11 @@
-const { deepStrictEqual } = require('assert')
+const { deepStrictEqual } = require("assert");
 {
-  console.log("Counter")
-  let counter = 0
-  let counter2 = counter
-  counter2++
-  console.log("counter", counter)
-  console.log("counter2", counter2)
+  console.log("Counter");
+  let counter = 0;
+  let counter2 = counter;
+  counter2++;
+  console.log("counter", counter);
+  console.log("counter2", counter2);
   /*
     Apenas o segundo contador é incrementado,
     pois sua inicialização começa criando uma nova referência, logo:
@@ -15,18 +15,18 @@ const { deepStrictEqual } = require('assert')
     logo, são armazenados diretamente no Call Stack.
     "Tipo primitivo gera uma cópia em memória"
   */
-  deepStrictEqual(counter, 0)
-  deepStrictEqual(counter2, 1)
+  deepStrictEqual(counter, 0);
+  deepStrictEqual(counter2, 1);
 }
 
 {
-  console.log("Item")
-  const item = { counter: 0 }
-  const item2 = item
-  item2.counter++
-  
-  console.log("item", item)
-  console.log("item2", item2)
+  console.log("Item");
+  const item = { counter: 0 };
+  const item2 = item;
+  item2.counter++;
+
+  console.log("item", item);
+  console.log("item2", item2);
   /*
     Ambos os contadores são incrementados,
     pois a referência do item2 é a mesma referência do item, logo:
@@ -36,11 +36,11 @@ const { deepStrictEqual } = require('assert')
     logo, são armazenados diretamente no Memory Heap.
     "Tipo de referência, copia o endereço de memória e aponta para o mesmo lugar"
   */
- deepStrictEqual(item, { counter: 1 })
- 
- item.counter++
- console.log("item", item)
- console.log("item2", item2)
+  deepStrictEqual(item, { counter: 1 });
 
- deepStrictEqual(item2, { counter: 2 })
+  item.counter++;
+  console.log("item", item);
+  console.log("item2", item2);
+
+  deepStrictEqual(item2, { counter: 2 });
 }
