@@ -19,6 +19,12 @@ Repo based on [JS Expert](https://training.erickwendel.com.br/) classes.
   - [x] ECMAScripts Modules
   - [x] Project JS Lifecycle
 - [ ] Advanced Javascript Data Types
+  - [ ] Generators, Iterators & Async Iterators
+  - [ ] Type Symbol
+  - [ ] Map & WeakMap
+  - [ ] Set & WeakSet
+  - [ ] Reflect
+  - [ ] Proxy & Node timers
 - [ ] RegExp
 - [ ] Creational Design Patterns
 - [ ] Behavioural and Structural Design Patterns
